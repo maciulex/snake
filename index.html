@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Najlepszy snake</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+	<main>
+		<div style="display: flex">
+			<div class="tableDiv">
+				<table cellspacing="0px;" id="snake"><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></table>
+			</div>
+			<div class="tableDiv scoreDiv">
+				<table cellspacing="0px"id="scoreT"><tr><th colspan="3">5 najlepszych wyników</th></tr><tr><th class="number">1.</th><th>nick</th><th>score</th></tr><tr><th class="number">2.</th><th>nick</th><th>score</th></tr><tr><th class="number">3.</th><th>nick</th><th>score</th></tr><tr><th class="number">4.</th><th>nick</th><th>score</th></tr><tr><th class="number">5.</th><th>nick</th><th>score</th></tr></table>
+				<table id="actualScore">
+					<tr>	
+						<th>Aktualny wynik: </th>
+						<th>000</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<br><br>
+		<form name="f2">
+		    <span>Czy chcesz stały nick? </span><input name="i1" type="checkbox"><br>
+		    <input name="i2" type="text" placeholder="twój nick"><br><br>
+		    <span>Czy chcesz komunikat o przegranej? </span><input name="i3" type="checkbox" checked="true"><br><br>
+		</form>
+		<div>Aktualna prędkość sneaka to: <span id="intervalHTML"></span></div>
+		<br>
+		<form name="f1">
+		    <input name="b1" type="number" placeholder="prędkość węsza">
+		</form>
+		<button onclick="intervalF()">Zmień prędkość węża</button>
+	</main>
+</body>	
+</html>
